@@ -123,5 +123,8 @@
     "storybook-addon-next-router": {
       "next": "$next"
     }
+  },
+  "volta": {
+    "node": "20.10.0"
   }
 }

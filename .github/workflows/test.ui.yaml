@@ -125,12 +125,12 @@ jobs:
         with:
           path: storybook-static
           key: ${{ runner.os }}-${{ github.sha }}
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@master
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-1
+      # - name: Configure AWS Credentials
+      #   uses: aws-actions/configure-aws-credentials@master
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: ap-northeast-1
       - name: Install Fonts
         run: sudo apt-get install fonts-ipafont-gothic fonts-ipafont-mincho
       - name: Run Storycap
